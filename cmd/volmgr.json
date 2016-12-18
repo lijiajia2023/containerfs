@@ -1,0 +1,6 @@
+{
+	"role":"volmgr",
+	"port":"1024",
+	"data":"/export/data/cfs/volmgr",
+	"log":"/export/logs/cfs/volmgr"
+}

@@ -1,0 +1,6 @@
+{
+	"role":"metanode",
+	"port":"1025",
+	"data":"/export/data/cfs/metanode-1000",
+	"log":"/export/logs/cfs/metanode-1000"
+}

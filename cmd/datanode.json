@@ -1,0 +1,6 @@
+{
+	"role":"datanode",
+	"port":"1023",
+	"data":"/export/data/cfs/datanode-200",
+	"log":"/export/logs/cfs/datanode-200"
+}
