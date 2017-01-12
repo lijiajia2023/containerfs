@@ -2,4 +2,4 @@ package metanode
 
 type Server struct{}
 
-func (s *Server) createInodeGroup() {}
+func (s *Server) createMetadataTable() {}

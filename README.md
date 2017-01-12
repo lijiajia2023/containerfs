@@ -3,27 +3,17 @@ a cluster filesystem for the containers
 
 # Concepts
 
-volume, a filesystem instance
-
-blockgroup,
-
-inodegroup,
+a volume = a metadata table + multiple block groups
 
 # Key Problem: Ino Generation
 
-alloc on the server side
+auto increase on the client side, and fetch the initial ino from the metadata table on mount
 
-directory inodes have even numbers and regular files use odd numbers.
-
-# Memory, Disk, and Server
-
-Metadata (inodes, directry trees) are totally in memory and persisted onto the disk. 
-
-A datanode is associated with one disk, which make things simpler. And one data storage server may run multiple datanodes. 
+or allocate on the metadata table side
 
 # Replication
 
-raft or paxos for the inodegroup
+raft or paxos for the metadata table
 
 append-only write for blockgroups
 
